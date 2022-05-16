@@ -44,7 +44,7 @@ function getComputerChoice(){
 }
 
 function getPlayerChoice(){
-   let playerSelection = window.prompt("Do you want to choose: Rock, Paper, or Scissors?");
+   let playerSelection = window.prompt("Do you want to choose: Rock, Paper, or Scissors?").toLocaleLowerCase();
 
     if (playerSelection === 'rock' || playerSelection === 'paper' || playerSelection === 'scissors'){
         return playerSelection;
